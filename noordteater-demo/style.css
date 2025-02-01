@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   height: 100%;
-  -webkit-overflow-scrolling: touch;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -64,14 +63,6 @@ body {
   display: flex;
   flex-wrap: nowrap;
 
-}
-
-@media (max-width: 768px) {
-  #highlight-wrapper {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 }
 
 /* Preloader and loader remain the same */
@@ -368,20 +359,11 @@ body {
   margin-bottom: 0.25rem;
 }
 
-/* @media (min-width: 768px) {
-  .info-box {
-    padding: 2rem;
-  }
-} */
-
 .countdown-box .flipdown {
   margin: 1em auto;
   display: flex;
-  /* Use flexbox */
   justify-content: center;
-  /* Center horizontally */
   align-items: center;
-  /* Center vertically */
 }
 
 
