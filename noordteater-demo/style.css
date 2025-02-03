@@ -30,6 +30,7 @@ body {
   box-sizing: border-box;
   background-size: cover;
   background-repeat: no-repeat;
+  will-change: transform;
 }
 
 .highlight-image-background::before {

@@ -57,9 +57,10 @@ function loadHorizontalAnimateHighlightWrapper(inPanelAnimations) {
       pin: true,
       scrub: 1,
       end: "+=3500",
-    }
+    },
+    force3D: true, // Enable GPU acceleration
   });
-
+  ScrollTrigger.normalizeScroll(true)
   return parentTween;
 }
 
