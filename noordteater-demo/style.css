@@ -48,7 +48,6 @@ body {
 }
 
 .reveal {
-  visibility: hidden;
   position: relative;
   width: 80%;
   height: 80%;
@@ -66,13 +65,13 @@ body {
 }
 
 /* Preloader and loader remain the same */
-.preloader {
+#preloader {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
+  width: 100%;
+  height: 100%;
+  background: black; /* Matches slideshow background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,22 +79,17 @@ body {
 }
 
 .loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 6px solid white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1.5s linear infinite;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .slide {
@@ -108,6 +102,7 @@ body {
   background-position: center;
   opacity: 0;
   overflow: hidden;
+  will-change: opacity, transform; 
 }
 
 .slide::before {

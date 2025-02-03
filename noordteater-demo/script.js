@@ -4,36 +4,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
   loadLandingAnimation();
   loadHighlightSlideshow();
   addNavbarAnimation();
-  loadHorizontalAnimateHighlightWrapper(function (parentTween) {
-    loadHighlightImageAnimation(parentTween, "#highlight-image-1");
-    loadHighlightImageAnimation(parentTween, "#highlight-image-2");
-    loadHighlightImageAnimation(parentTween, "#highlight-image-3");
-    loadHighlightImageAnimation(parentTween, "#highlight-image-4");
-    loadHighlightImageAnimation(parentTween, "#highlight-image-5");
-  });
+  loadHighlightImageAnimation(loadHorizontalAnimateHighlightWrapper());
   loadProductionCountdown(1740423600);
-  loadSectionAnimation("#storypanel", true);
-  loadSectionAnimation("#production", true);
-  loadSectionAnimation("#gallery", false);
+  batchSectionAnimations();
   loadGallery();
 });
 
-function loadHighlightImageAnimation(parentTween, highlightImageId) {
-  let highlightImage = document.querySelector(highlightImageId);
-  let image = highlightImage.querySelector(".responsive-image");
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: highlightImage,
-      containerAnimation: parentTween,
-      start: "left 80%",
-      toggleActions: "play none none none",
+function loadHighlightImageAnimation(parentTween) {
+ gsap.set(".highlight-image img", { opacity: 0 });
+
+  ScrollTrigger.batch(".highlight-image", {
+    interval: 0.1, // Time between each batch execution
+    start: "left 80%",
+    once: true,
+    containerAnimation: parentTween,
+    onEnter: batch => {
+      batch.forEach(highlight => {
+        const image = highlight.querySelector("img");
+        gsap.to(image,
+          { opacity: 1, ease: "Power1.in" }
+        );
+      });
     }
   });
-  tl.from(highlightImage, {
-    autoAlpha: 0,
-    ease: "Power1.in",
-  });
 }
+
+
+
+
 
 function loadGallery() {
   $("#mygallery").justifiedGallery({
@@ -66,7 +64,7 @@ function loadHorizontalAnimateHighlightWrapper(inPanelAnimations) {
     }
   });
 
-  inPanelAnimations(parentTween);
+  return parentTween;
 }
 
 function loadLandingAnimation() {
@@ -154,63 +152,42 @@ function loadLandingAnimation() {
     }, "+=3");
 }
 
+function preloadImages(slides, callback) {
+  let loaded = 0;
+  slides.forEach(slide => {
+    const img = new Image();
+    img.src = slide.style.backgroundImage.slice(5, -2);
+    img.onload = () => {
+      loaded++;
+      if (loaded === slides.length) callback(); // Start animation after all images load
+    };
+  });
+}
+
 function loadHighlightSlideshow() {
-  const preloader = document.querySelector('.preloader');
-  const slides = document.querySelectorAll('.slide');
+  const slides = document.querySelectorAll(".slide");
   const numberOfSlides = slides.length;
   const baseDuration = 1.5;
-  const fadeOutDelay = 1;
+  const fadeOutDelay = 0.5;
 
-  function loadImage(slide) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.src = slide.style.backgroundImage.slice(5, -2); // Extract url from background image string
-      img.onload = () => {
-        resolve(slide);
-      };
-      img.onerror = (err) => {
-        console.error(`Error loading image ${img.src}`);
-        reject(err);
-      };
-    });
-  }
+  gsap.set(slides, { opacity: 0 }); // Start all slides as hidden
+  gsap.set(slides[0], { opacity: 1 }); // Make the first slide visible
 
-  Promise.all(Array.from(slides).map(slide => loadImage(slide)))
-    .then((loadedSlides) => {
-      // Hide the preloader
-      gsap.to(preloader, { duration: 0.5, opacity: 0, onComplete: () => preloader.style.display = 'none' });
-      gsap.set(loadedSlides[0], { opacity: 1, scale: 1 });
 
-      const slideshowTimeline = gsap.timeline({
-        repeat: -1, // Infinite loop
-        defaults: {
-          duration: baseDuration,
-          ease: "power2.inOut",
-        },
-      });
+  preloadImages(slides, () => {
 
-      for (let i = 0; i < numberOfSlides; i++) {
-        const nextSlideIndex = (i + 1) % numberOfSlides;
-        slideshowTimeline
-          .to([slides[i], slides[nextSlideIndex]], { opacity: 1 }, `-=${baseDuration * 0.8}`)
-          .to(slides[i], { opacity: 0 }, `+=${fadeOutDelay}`);
-      }
+    const slideshowTimeline = gsap.timeline({ repeat: -1, defaults: { duration: baseDuration, ease: "power2.inOut" } });
 
-      // ---- Scroll Trigger for slideshow  -----
-      ScrollTrigger.create({
-        trigger: ".description.highlight-panel.hero.is-fullheight",
-        start: "top top",
-        end: '+=50%',
-        onEnter: () => slideshowTimeline.pause(),
-        onLeaveBack: () => slideshowTimeline.play(),
-      });
+    for (let i = 0; i < numberOfSlides; i++) {
+      const nextSlide = slides[(i + 1) % numberOfSlides];
 
-    })
-    .catch((error) => {
-      console.error('Failed to load all images:', error);
-      preloader.textContent = 'Failed to Load Images, Please Refresh Page.';
-    });
+      slideshowTimeline
+        .to(nextSlide, { opacity: 1, scale: 1.05 }, "<0.5") // 👈 Start fading in before the previous slide fades out
+        .to(slides[i], { opacity: 0, scale: 1 }, `+=${fadeOutDelay}`); // 👈 Delayed fade-out to avoid white flash
+    }
+  });
 }
+
 
 function addNavbarAnimation() {
   const navbar = document.querySelector('.navbar');
@@ -248,58 +225,40 @@ function loadProductionCountdown(targetTimestamp) {
   }
 }
 
-function loadSectionAnimation(sectionId, animateContent) {
-  // Split section-title into spans for letter-by-letter animation
-  const section = document.querySelector(sectionId);
-  const sectionTitle = section.querySelector(".section-title");
-  const letters = sectionTitle.textContent.split("");
-  sectionTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join("");
+function batchSectionAnimations() {
 
-  const timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: sectionId,
-      start: "top 80%", // When the section enters 80% of the viewport
-      end: "bottom 20%", // Optional: End of animation trigger point
-      toggleActions: "play none none none", // Play on enter, do nothing on leave
-    },
+  // Split text into spans for animation
+  document.querySelectorAll(".animated-panel .section-title").forEach(title => {
+    const letters = title.textContent.split("");
+    title.innerHTML = letters.map(letter => `<span>${letter}</span>`).join("");
   });
 
-  // Add letter-by-letter reveal for .sectionTitle
-  timeline.fromTo(
-    sectionId + " .section-title span",
-    {
-      opacity: 0,
-      y: 20, // Start slightly below
-    },
-    {
-      opacity: 1,
-      y: 0, // Animate upward into place
-      duration: 0.8,
-      stagger: {
-        from: "random",
-        amount: 1
-      },
-      ease: "power3.out",
+  gsap.set(".animated-panel .section-title span", { opacity: 0, y: 20 });
+
+  // Batch animations for sections
+  ScrollTrigger.batch(".animated-panel", {
+    interval: 0.1, // Time between each batch execution
+    start: "top 80%",
+    end: "bottom 20%",
+    once: true,
+    onEnter: batch => {
+      batch.forEach(section => {
+        const titleSpans = Array.from(section.querySelectorAll(".section-title span"));
+        const content = section.querySelector(".section-content");
+
+        // Animate title letter-by-letter
+        gsap.to(titleSpans,
+          { opacity: 1, y: 0, duration: 0.8, stagger: 0.05, ease: "power3.out" }
+        );
+
+        // Optionally animate content
+        if (content) {
+          gsap.fromTo(content,
+            { opacity: 0, y: 40 },
+            { opacity: 1, y: 0, duration: 2, ease: "bounce.out" }
+          );
+        }
+      });
     }
-  );
-
-  if (animateContent) {
-    // Add .textcontent fade-in after .sectionTitle completes
-    timeline.fromTo(
-      sectionId + " .section-content",
-      {
-        opacity: 0,
-        y: 40, // Start slightly below
-      },
-      {
-        opacity: 1,
-        y: 0, // Fade in and move upward
-        duration: 2,
-        ease: "bounce.out",
-      },
-      "-=1" // Overlap the animations slightly for smooth flow
-    );
-  }
-
-  return timeline;
+  });
 }
