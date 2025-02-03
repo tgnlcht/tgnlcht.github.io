@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 function loadHighlightImageAnimation(parentTween) {
- gsap.set(".highlight-image img", { opacity: 0 });
+/*  gsap.set(".highlight-image img", { opacity: 0 });
 
   ScrollTrigger.batch(".highlight-image", {
     interval: 0.1, // Time between each batch execution
@@ -26,12 +26,8 @@ function loadHighlightImageAnimation(parentTween) {
         );
       });
     }
-  });
+  }); */
 }
-
-
-
-
 
 function loadGallery() {
   $("#mygallery").justifiedGallery({
