@@ -4,11 +4,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
   loadLandingAnimation();
   loadHighlightSlideshow();
   addNavbarAnimation();
-  loadHorizontalAnimateHighlightWrapper();
+  loadHighlightImageAnimation(loadHorizontalAnimateHighlightWrapper());
   loadProductionCountdown(1740423600);
   batchSectionAnimations();
   loadGallery();
 });
+
+function loadHighlightImageAnimation(parentTween) {
+/*  gsap.set(".highlight-image img", { opacity: 0 });
+
+  ScrollTrigger.batch(".highlight-image", {
+    interval: 0.1, // Time between each batch execution
+    start: "left 80%",
+    once: true,
+    containerAnimation: parentTween,
+    onEnter: batch => {
+      batch.forEach(highlight => {
+        const image = highlight.querySelector("img");
+        gsap.to(image,
+          { opacity: 1, ease: "Power1.in" }
+        );
+      });
+    }
+  }); */
+}
 
 function loadGallery() {
   $("#mygallery").justifiedGallery({
@@ -27,7 +46,7 @@ function loadGallery() {
 }
 
 
-function loadHorizontalAnimateHighlightWrapper() {
+function loadHorizontalAnimateHighlightWrapper(inPanelAnimations) {
   let hightlightWrapper = document.querySelector('#highlight-wrapper');
   let divs = hightlightWrapper.querySelectorAll(".highlight-panel");
   let parentTween = gsap.to(divs, {
@@ -36,7 +55,7 @@ function loadHorizontalAnimateHighlightWrapper() {
     scrollTrigger: {
       trigger: hightlightWrapper,
       pin: true,
-      scrub: 2,
+      scrub: 1,
       end: "+=3500",
     },
     force3D: true, // Enable GPU acceleration
@@ -160,8 +179,8 @@ function loadHighlightSlideshow() {
       const nextSlide = slides[(i + 1) % numberOfSlides];
 
       slideshowTimeline
-        .to(nextSlide, { opacity: 1, scale: 1.05 }, "<0.5") // Start fading in before the previous slide fades out
-        .to(slides[i], { opacity: 0, scale: 1 }, `+=${fadeOutDelay}`); // Delayed fade-out to avoid white flash
+        .to(nextSlide, { opacity: 1, scale: 1.05 }, "<0.5") // 👈 Start fading in before the previous slide fades out
+        .to(slides[i], { opacity: 0, scale: 1 }, `+=${fadeOutDelay}`); // 👈 Delayed fade-out to avoid white flash
     }
   });
 }
