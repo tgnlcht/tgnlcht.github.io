@@ -1,9 +1,8 @@
 <html data-theme="light">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"> </script>
+  <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="./justifiedGallery.min.css">
   <script src="./jquery.justifiedGallery.min.js"></script>
@@ -13,8 +12,10 @@
   <link href="./flipdown.min.css" rel="stylesheet" />
   <script src="./flipdown.min.js"></script>
 
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-  <link rel="stylesheet" href="style.css">
+
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +26,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-16.webp">
-    <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-1.webp">
-    <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-5.webp">
-    <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-20.webp">
-    <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-24.webp">
-    <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-29.webp">
 </head>
 
 <body>
@@ -48,11 +42,8 @@
     </div>
     <div id="navbar" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item has-text-weight-bold" href="https://www.noordteater.com/" target="_new">Ga naar
-          noordteater.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a class="navbar-item has-text-weight-bold"
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A//spotlicht.be/noordteater" target="_new"><i
-            class="fab fa-facebook-f"></i></a>
+        <a class="navbar-item has-text-weight-bold" href="https://www.noordteater.com/" target="_new">Ga naar noordteater.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="navbar-item has-text-weight-bold" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//spotlicht.be/noordteater" target="_new"><i class="fab fa-facebook-f"></i></a>
         <span class="navbar-item">
           <a href="">
             <span class="tickets">Boek je tickets!</span>
@@ -80,24 +71,24 @@
       </div>
 
       <div class="has-text-centered">
-        <div class="bouncing-arrow glow">&#x2193;</div>
+       <div class="bouncing-arrow glow">&#x2193;</div>
       </div>
     </div>
   </section>
 
   <div id="highlight-wrapper">
-    <section class="highlight-panel hero animated-panel pb-3" id="storypanel">
-      <div class="container" style="height: 100%;">
-        <div class="hero-body" style="height: 100%;" >
-          <div class="columns is-vcentered" style="height: 100%">
-            <div class="column" style="height: 100%;">
-              <div class="section-title pb-6 is-size-3-touch">Het Verhaal.</div>
-              <div class="section-content has-text-justified content">
+    <section class="highlight-panel hero is-fullheight animated-panel" id="storypanel">
+      <div class="hero-body">
+        <div class="columns is-gapless">
+          <div class="column is-half left-column">
+            <div class="content has-text-justified pt-6 pl-6 pr-6">
+              <div class="section-title">Het Verhaal.</div>
+              <div class="section-content pt-6 is-size-5">
                 <p>Wilt ge dood?<br />
                   Of wilt ge leven?<br />
                   Dat is de vraag.<br /></p>
 
-                <p>Denemarken is ziek. Twee maanden na het overlijden van de koning, hertrouwt Hamlet's moeder met
+                <p>Denemarken is ziek. Twee maanden na het overlijden van de koning, hertrouwt Hamlet’s moeder met
                   zijn
                   nonkel, Claudius. Het nieuwe Deense koningspaar schranst en zwelgt.</p>
                 <p>Ja, ze durven feesten. Omdat ze gelukkig zijn. Omdat het land verder moet.</p>
@@ -110,144 +101,133 @@
                   bekendste Shakespearetragedie. Een voorstelling die door elkaar schudt, de poëzie niet schuwt en
                   verbazend
                   dicht bij het origineel blijft.</p>
+
               </div>
             </div>
-            <div class="column is-half has-text-right is-hidden-touch">
-              <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" style="height: 100%;"/>  
+          </div>
+          <div class="column is-half right-column is-align-items-center is-flex">
+            <div class="container has-text-centered image-container">
+              <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="highlight-panel hero highlight-image-background"
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="highlight-panel hero is-fullheight highlight-image-background"
       style="--background-image-url: url('./hamlet/NT-2024-Hamlet-1.webp');">
-      <div class="container">
-        <div class="hero-body">
-          <div class="container has-text-centered is-vcentered">
-            <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" />
-          </div>
+      <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+        <div id="highlight-image-1" class="container has-text-centered image-container reveal">
+          <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" />
         </div>
       </div>
     </section>
-    <section class="highlight-panel hero highlight-image-background">
-      <div class="container">
-        <div class="hero-body">
-          <div class="container has-text-centered is-vcentered">
-            <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" />
-          </div>
+    <section class="highlight-panel is-fullheight highlight-image-background">
+      <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+        <div class="container has-text-centered image-container reveal highlight-image">
+          <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" />
         </div>
       </div>
     </section>
-    <section class="highlight-panel hero highlight-image-background"
+    <section class="highlight-panel is-fullheight highlight-image-background"
       style="--background-image-url: url(./hamlet/NT-2024-Hamlet-20.webp);">
-      <div class="container">
-        <div class="hero-body">
-          <div class="container has-text-centered is-vcentered">
-            <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" />
-          </div>
+      <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+        <div class="container has-text-centered image-container reveal highlight-image">
+          <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" />
         </div>
       </div>
     </section>
-    <section class="highlight-panel hero highlight-image-background">
-      <div class="container">
-        <div class="hero-body">
-          <div class="container has-text-centered is-vcentered">
-            <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-24.webp" alt="Hamlet" />
-          </div>
+    <section class="highlight-panel is-fullheight highlight-image-background">
+      <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+        <div class="container has-text-centered image-container reveal highlight-image">
+          <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-24.webp" alt="Hamlet" />
         </div>
       </div>
     </section>
-    <section class="highlight-panel hero highlight-image-background"
+    <section class="highlight-panel is-fullheight highlight-image-background"
       style="--background-image-url: url(./hamlet/NT-2024-Hamlet-29.webp);">
-      <div class="container">
-        <div class="hero-body">
-          <div class="container has-text-centered is-vcentered">
-            <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-29.webp" alt="Hamlet" />
-          </div>
+      <div class="hero-body is-flex is-justify-content-center is-align-items-center">
+        <div class="container has-text-centered image-container reveal highlight-image">
+          <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-29.webp" alt="Hamlet" />
         </div>
       </div>
     </section>
   </div>
 
   <section class="section animated-panel" id="production" style="background-color: lightgray;">
-    <div class="container">
-      <div class="section-title pb-6 is-size-3-touch">De Productie.</div>
-      <div class="section-content">
-        <div class="columns">
-          <div class="column is-one-third">
+    <div class="section-title pb-6">De Productie.</div>
+    <div class="section-content content has-text-justified">
+      <div class="columns is-vcentered">
+        <!-- Poster Image Column -->
+        <div class="column is-one-third-desktop is-full-tablet">
+          <div class="poster-container">
             <img class="poster-image has-shadow" src="./hamlet-poster2-lr_orig.jpg" alt="Hamlet Play Poster" />
           </div>
-          <!-- Info Column -->
-          <div class="column is-two-thirds">
-            <div class="fixed-grid has-3-cols">
-              <div class="grid">
-                <!-- Countdown Timer Box -->
-                <div class="info-box cast-box countdown-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"> <i class="fa-solid fa-clock"></i> Volgende
-                    voorstelling
-                    in:</h3>
-                  <div class="has-text-centered" style="width: 100%">
-                    <div id="flipdown" class="flipdown"></div>
-                  </div>
+        </div>
+        <!-- Info Column -->
+        <div class="column is-two-thirds-desktop is-full-tablet">
+          <div class="info-grid">
+            <!-- Countdown Timer Box -->
+            <div class="info-box cast-box countdown-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"> <i class="fa-solid fa-clock"></i> Volgende voorstelling in:</h3>
+              <div class="has-text-centered" style="width: 100%">
+                <div id="flipdown" class="flipdown"></div>
+              </div>
+            </div>
+            <!-- Author -->
+            <div class="info-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-pen-nib"></i> Auteur</h3>
+              <p>Piet Arfeuille, naar 'Hamlet' van William Shakespeare</p>
+            </div>
+            <!-- Director -->
+            <div class="info-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-user-tie"></i> Regie & Bewerking</h3>
+              <p>Nick Delafontaine</p>
+            </div>
+            <!-- Director Assistant -->
+            <div class="info-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-user-gear"></i> Regie-assistentie
+              </h3>
+              <p>Agnes Gottmann</p>
+            </div>
+            <!-- Screen Choreography -->
+            <div class="info-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-video"></i> Schermchoreografie</h3>
+              <p>Sigi Claes (Antwerps Scherm Centrum vzw)</p>
+            </div>
+            <!-- Genre -->
+            <div class="info-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-masks-theater"></i> Genre</h3>
+              <p>Tragedie</p>
+            </div>
+            <!-- Photographer -->
+            <div class="info-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-camera"></i> Fotografie</h3>
+              <p>Martin Kwee</p>
+            </div>
+            <!-- Cast -->
+            <div class="info-box cast-box" data-gsap-box>
+              <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-users"></i> Cast</h3>
+              <p>
+                Hans Claes, Jasper Weerts, Peter Renders, Gilbert Van Asselt, Maurice Van Tiggel,
+                Marleen Hereygers,
+                Laila Mariën, Nils Anderson, Jan Binnemans, Ellen Dupré
+              </p>
+            </div>
+            <!-- Location & Dates -->
+            <div class="info-box location-dates cast-box" data-gsap-box>
+              <div class="columns is-multiline is-mobile">
+                <div class="column is-full-mobile is-half-desktop">
+                  <h3 class="subtitle is-6 has-text-weight-bold"> <i class="fa-solid fa-location-dot"></i> Locatie</h3>
+                  <p>Noordteater<br />
+                    Sint-nicolaasplaats 6<br />
+                    ​2000 Antwerpen</p>
                 </div>
-                <!-- Author -->
-                <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-pen-nib"></i> Auteur</h3>
-                  <p>Piet Arfeuille, naar 'Hamlet' van William Shakespeare</p>
-                </div>
-                <!-- Director -->
-                <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-user-tie"></i> Regie & Bewerking
+                <div class="column is-full-mobile is-half-desktop">
+                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-calendar-days"></i> Speeldata
                   </h3>
-                  <p>Nick Delafontaine</p>
-                </div>
-                <!-- Director Assistant -->
-                <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-user-gear"></i> Regie-assistentie
-                  </h3>
-                  <p>Agnes Gottmann</p>
-                </div>
-                <!-- Screen Choreography -->
-                <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-video"></i> Schermchoreografie
-                  </h3>
-                  <p>Sigi Claes (Antwerps Scherm Centrum vzw)</p>
-                </div>
-                <!-- Genre -->
-                <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-masks-theater"></i> Genre</h3>
-                  <p>Tragedie</p>
-                </div>
-                <!-- Photographer -->
-                <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-camera"></i> Fotografie</h3>
-                  <p>Martin Kwee</p>
-                </div>
-                <!-- Cast -->
-                <div class="info-box cast-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-users"></i> Cast</h3>
-                  <p>
-                    Hans Claes, Jasper Weerts, Peter Renders, Gilbert Van Asselt, Maurice Van Tiggel,
-                    Marleen Hereygers, Laila Mariën, Nils Anderson, Jan Binnemans, Ellen Dupré
-                  </p>
-                </div>
-                <!-- Location & Dates -->
-                <div class="info-box location-dates cast-box">
-                  <div class="columns is-multiline is-mobile">
-                    <div class="column is-full-mobile is-half-desktop">
-                      <h3 class="subtitle is-6 has-text-weight-bold"> <i class="fa-solid fa-location-dot"></i> Locatie
-                      </h3>
-                      <p>Noordteater<br />
-                        Sint-nicolaasplaats 6<br />
-                        ​2000 Antwerpen</p>
-                    </div>
-                    <div class="column is-full-mobile is-half-desktop">
-                      <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-calendar-days"></i> Speeldata
-                      </h3>
-                      <p>Van 06 December 2024 tot 11 Januari 2025</p>
-                    </div>
-                  </div>
+                  <p>Van 06 December 2024 tot 11 Januari 2025</p>
                 </div>
               </div>
             </div>
@@ -258,89 +238,51 @@
   </section>
 
   <section class="section animated-panel" id="gallery">
-    <div class="container">
-      <div class="section-title pb-6 is-size-3-touch">De Galerij.</div>
-      <div class="content" id="mygallery">
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-1.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-1.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-2.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-2.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-3.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-3.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-4.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-4.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-5.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-5.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-6.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-6.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-7.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-7.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-8.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-8.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-9.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-9.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-10.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-10.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-11.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-11.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-12.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-12.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-13.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-13.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-14.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-14.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-15.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-15.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-16.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-16.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-17.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-17.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-18.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-18.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-19.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-19.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-20.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-20.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-21.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-21.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-22.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-22.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-23.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-23.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-24.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-24.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-25.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-25.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-26.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-26.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-27.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-27.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-28.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-28.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-29.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-29.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-30.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-30.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-31.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-31.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-32.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-32.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-33.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-33.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-34.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-34.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-35.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-35.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-36.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-36.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-37.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-37.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-38.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-38.webp" height="330" /></a>
-        <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-39.webp"><img alt="Hamlet"
-            src="./hamlet/thumbnails/NT-2024-Hamlet-39.webp" height="330" /></a>
-      </div>
+    <div class="section-title pb-6">De Galerij.</div>
+    <div class="content" id="mygallery">
+
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-1.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-1.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-2.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-2.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-3.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-3.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-4.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-4.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-5.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-5.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-6.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-6.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-7.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-7.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-8.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-8.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-9.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-9.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-10.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-10.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-11.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-11.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-12.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-12.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-13.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-13.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-14.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-14.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-15.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-15.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-16.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-16.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-17.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-17.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-18.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-18.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-19.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-19.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-20.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-20.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-21.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-21.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-22.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-22.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-23.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-23.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-24.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-24.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-25.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-25.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-26.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-26.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-27.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-27.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-28.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-28.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-29.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-29.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-30.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-30.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-31.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-31.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-32.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-32.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-33.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-33.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-34.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-34.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-35.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-35.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-36.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-36.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-37.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-37.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-38.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-38.webp" height="330" /></a>
+      <a data-lightbox="gallery" href="./hamlet/NT-2024-Hamlet-39.webp"><img alt="Hamlet" src="./hamlet/thumbnails/NT-2024-Hamlet-39.webp" height="330" /></a>
+
     </div>
+
   </section>
 
   <footer class="footer">
