@@ -28,21 +28,24 @@ function loadGallery() {
 
 
 function loadHorizontalAnimateHighlightWrapper() {
-  let hightlightWrapper = document.querySelector('#highlight-wrapper');
-  let divs = hightlightWrapper.querySelectorAll(".highlight-panel");
-  let parentTween = gsap.to(divs, {
-    xPercent: -100 * (divs.length - 1),
-    ease: "none",
-    scrollTrigger: {
-      trigger: hightlightWrapper,
-      pin: true,
-      scrub: 2,
-      end: "+=3500",
-    },
-    force3D: true, // Enable GPU acceleration
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 800px)", () => {
+    let hightlightWrapper = document.querySelector('#highlight-wrapper');
+    let divs = hightlightWrapper.querySelectorAll(".highlight-panel");
+    let parentTween = gsap.to(divs, {
+      xPercent: -100 * (divs.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: hightlightWrapper,
+        pin: true,
+        scrub: 2,
+        end: "+=3500",
+      },
+      //force3D: true, // Enable GPU acceleration
+    });
+    ScrollTrigger.normalizeScroll(true);
   });
-  ScrollTrigger.normalizeScroll(true)
-  return parentTween;
+
 }
 
 function loadLandingAnimation() {
@@ -168,10 +171,10 @@ function loadHighlightSlideshow() {
 
 
 function addNavbarAnimation() {
+  gsap.set(".navbar", { opacity: 0, y: -50 });
   const navbar = document.querySelector('.navbar');
-  gsap.fromTo(
+  gsap.to(
     ".navbar",
-    { opacity: 0, y: -50 },
     {
       opacity: 1,
       y: 0,
