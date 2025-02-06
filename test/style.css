@@ -3,6 +3,10 @@ body {
   font-family: "Inter", serif;
 }
 
+.burger  {
+  --bulma-navbar-burger-color: #fc6a03;
+}
+
 .production-name {
   font-family: "Oswald", serif;
   font-weight: 800;
@@ -34,7 +38,7 @@ body {
   z-index: -1;
 } 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   #highlight-wrapper {
     overscroll-behavior: none;
     width: 600%;
@@ -185,7 +189,7 @@ body {
 
 .bouncing-arrow {
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 3rem;

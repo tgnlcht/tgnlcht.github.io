@@ -29,7 +29,7 @@ function loadGallery() {
 
 function loadHorizontalAnimateHighlightWrapper() {
   let mm = gsap.matchMedia();
-  mm.add("(min-width: 800px)", () => {
+  mm.add("(min-width: 1024px)", () => {
     let hightlightWrapper = document.querySelector('#highlight-wrapper');
     let divs = hightlightWrapper.querySelectorAll(".highlight-panel");
     let parentTween = gsap.to(divs, {
@@ -146,7 +146,16 @@ function preloadImages(slides, callback) {
 }
 
 function loadHighlightSlideshow() {
-  const slides = document.querySelectorAll(".slide");
+  let mm = gsap.matchMedia();
+  var slides;
+  mm.add("(min-width: 1024px)", () => {
+    slides = document.querySelectorAll(".slide.is-hidden-touch");
+  });
+  mm.add("(max-width: 1023px)", () => {
+    slides = document.querySelectorAll(".slide.is-hidden-desktop");
+  });
+
+  console.log(slides);
   const numberOfSlides = slides.length;
   const baseDuration = 1.5;
   const fadeOutDelay = 0.5;
