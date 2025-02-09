@@ -4,37 +4,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   loadLandingAnimation();
   loadHighlightSlideshow();
   addNavbarAnimation();
-  loadMobileHighlights();
   loadHorizontalAnimateHighlightWrapper();
   loadProductionCountdown(1740423600);
   batchSectionAnimations();
   loadGallery();
-  loadBurgerMenu();
 });
-
-function loadMobileHighlights() {
-  // external js: flickity.pkgd.js
-
-  var carousel = document.querySelector('.carousel');
-  var flkty = new Flickity(carousel, {
-    imagesLoaded: true,
-    percentPosition: false,
-  });
-
-  var imgs = carousel.querySelectorAll('.carousel-cell img');
-  // get transform property
-  var docStyle = document.documentElement.style;
-  var transformProp = typeof docStyle.transform == 'string' ?
-    'transform' : 'WebkitTransform';
-
-  flkty.on('scroll', function () {
-    flkty.slides.forEach(function (slide, i) {
-      var img = imgs[i];
-      var x = (slide.target + flkty.x) * -1 / 3;
-      img.style[transformProp] = 'translateX(' + x + 'px)';
-    });
-  });
-}
 
 function loadGallery() {
   $("#mygallery").justifiedGallery({
@@ -75,8 +49,8 @@ function loadHorizontalAnimateHighlightWrapper() {
 }
 
 function loadLandingAnimation() {
-  gsap.set(".overlay", { opacity: 0 });
-  gsap.set(".cutout-text", { y: 50, opacity: 0, y: 50, filter: "blur(10px)" });
+  gsap.set(".overlay", { opacity: 1 });
+  gsap.set(".cutout-text", { y: 50, opacity: 0 });
 
   const introTimeline = gsap.timeline();
 
@@ -89,8 +63,7 @@ function loadLandingAnimation() {
     .to(".cutout-text", {
       y: 0,
       opacity: 1,
-      duration: 3,
-      filter: "blur(0px)",
+      duration: 1.2,
       ease: "power2.out",
     }, "-=1") // Start fading in text while overlay is fading out
     .to(".cutout-text", {
@@ -99,15 +72,11 @@ function loadLandingAnimation() {
       yoyo: true,
       duration: 3,
       ease: "sine.inOut",
-    })
-    .to(".bouncing-arrow", {
-      opacity: 1,
-      duration: 1.2,
-      ease: "sine.inOut",
-    }, "-=5");
+    }); // Gentle floating effect
 
   gsap.to(".bouncing-arrow", {
-    y: -15,
+    opacity: 1,
+    y: -10,
     repeat: -1,
     yoyo: true,
     duration: 1.2,
@@ -138,6 +107,7 @@ function loadHighlightSlideshow() {
     slides = document.querySelectorAll(".slide.is-hidden-desktop");
   });
 
+  console.log(slides);
   const numberOfSlides = slides.length;
   const baseDuration = 1.5;
   const fadeOutDelay = 0.5;
@@ -234,25 +204,3 @@ function batchSectionAnimations() {
     }
   });
 }
-
-function loadBurgerMenu() {
- // Get all "navbar-burger" elements
- const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
- // Add a click event on each of them
- $navbarBurgers.forEach( el => {
-   el.addEventListener('click', () => {
-
-     // Get the target from the "data-target" attribute
-     const target = el.dataset.target;
-     const $target = document.getElementById(target);
-
-     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-     el.classList.toggle('is-active');
-     $target.classList.toggle('is-active');
-
-   });
- });
-
-}
-

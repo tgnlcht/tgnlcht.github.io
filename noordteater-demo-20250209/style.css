@@ -3,7 +3,7 @@ body {
   font-family: "Inter", serif;
 }
 
-.navbar-burger {
+.burger  {
   --bulma-navbar-burger-color: #fc6a03;
 }
 
@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 100%;
   padding-top: 2.5em;
-  will-change: transform, opacity;
+  will-change: transform;
 }
 
 .highlight-image-background::before {
@@ -36,7 +36,7 @@ body {
   background-repeat: no-repeat;
   opacity: 0.6;
   z-index: -1;
-}
+} 
 
 @media only screen and (min-width: 1024px) {
   #highlight-wrapper {
@@ -55,8 +55,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
-  /* Matches slideshow background */
+  background: black; /* Matches slideshow background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,13 +72,8 @@ body {
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .slide {
@@ -92,7 +86,7 @@ body {
   background-position: center;
   opacity: 0;
   overflow: hidden;
-  will-change: opacity, transform;
+  will-change: opacity, transform; 
 }
 
 .slide::before {
@@ -270,14 +264,14 @@ body {
 
 
 /* ticketsbutton */
-.tickets {
+.tickets{
   background: #FF4742;
   border: 1px solid #FFFFFF;
   border-radius: 6px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 16px;
@@ -298,60 +292,4 @@ body {
   background-position: 0 0;
   color: #FF4742;
   border-color: #FF4742;
-}
-
-
-.carousel-cell {
-  margin-right: 20px;
-  overflow: hidden;
-}
-
-.carousel-cell img {
-  display: block;
-  height: 200px;
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-cell img {
-    height: 400px;
-  }
-}
-
-.flickity-button {
-  background: #333;
-}
-
-.flickity-button:hover {
-  background: #fc6a03;
-}
-
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-}
-
-/* icon color */
-.flickity-button-icon {
-  fill: white;
-}
-
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -10px;
-}
-
-.flickity-prev-next-button.next {
-  right: -10px;
-}
-
-.flickity-page-dots {
-  bottom: -22px;
-}
-/* dots are lines */
-.flickity-page-dots .dot {
-  height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0;
 }

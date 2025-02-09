@@ -14,7 +14,6 @@
   <script src="./flipdown.min.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +32,6 @@
   <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-20.webp">
   <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-24.webp">
   <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-29.webp">
-
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -94,103 +91,105 @@
   </section>
 
   <div id="highlight-wrapper">
-    <section class="highlight-panel section  is-fullheight  animated-panel" id="storypanel">
-      <div class="container pt-6">
-        <div class="columns is-desktop">
-          <div class="column">
-            <div class="section-title pb-6 is-size-3-touch">Het Verhaal.</div>
-            <div class="section-content has-text-justified content">
-              <p>Wilt ge dood?<br />
-                Of wilt ge leven?<br />
-                Dat is de vraag.<br /></p>
+    <section class="highlight-panel hero animated-panel pb-3" id="storypanel">
+      <div class="container" style="height: 100%;">
+        <div class="hero-body" style="height: 100%;">
+          <div class="columns is-vcentered" style="height: 100%">
+            <div class="column" style="height: 100%;">
+              <div class="section-title pb-6 is-size-3-touch">Het Verhaal.</div>
+              <div class="section-content has-text-justified content">
+                <p>Wilt ge dood?<br />
+                  Of wilt ge leven?<br />
+                  Dat is de vraag.<br /></p>
 
-              <p>Denemarken is ziek. Twee maanden na het overlijden van de koning, hertrouwt Hamlet's moeder met
-                zijn
-                nonkel, Claudius. Het nieuwe Deense koningspaar schranst en zwelgt.</p>
-              <p>Ja, ze durven feesten. Omdat ze gelukkig zijn. Omdat het land verder moet.</p>
-              <p>Enkel Hamlet, de jonge prins, rouwt en walgt. Hij zal koste wat het kost de waarheid achter zijn
-                vaders
-                plotse dood aan het licht brengen. Trouwe vriend Horatio is de enige die het nog kan navertellen…
-              </p>
+                <p>Denemarken is ziek. Twee maanden na het overlijden van de koning, hertrouwt Hamlet's moeder met
+                  zijn
+                  nonkel, Claudius. Het nieuwe Deense koningspaar schranst en zwelgt.</p>
+                <p>Ja, ze durven feesten. Omdat ze gelukkig zijn. Omdat het land verder moet.</p>
+                <p>Enkel Hamlet, de jonge prins, rouwt en walgt. Hij zal koste wat het kost de waarheid achter zijn
+                  vaders
+                  plotse dood aan het licht brengen. Trouwe vriend Horatio is de enige die het nog kan navertellen…
+                </p>
 
-              <p>Het Noordteater speelt een Hamletversie die weer leven schopt in de stoffige maar waarschijnlijk
-                bekendste Shakespearetragedie. Een voorstelling die door elkaar schudt, de poëzie niet schuwt en
-                verbazend
-                dicht bij het origineel blijft.</p>
-
-              <div class="carousel is-hidden-desktop mt-5 mb-6" data-flickity='{ "wrapAround": true }'>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-24.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-29.webp" alt="Hamlet" /></div>
+                <p>Het Noordteater speelt een Hamletversie die weer leven schopt in de stoffige maar waarschijnlijk
+                  bekendste Shakespearetragedie. Een voorstelling die door elkaar schudt, de poëzie niet schuwt en
+                  verbazend
+                  dicht bij het origineel blijft.</p>
               </div>
-
+            </div>
+            <div class="column is-half has-text-right is-hidden-touch">
+              <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" style="height: 100%;" />
             </div>
           </div>
-          <div class="column is-half has-text-right is-hidden-touch pb-6">
-            <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" style="max-height: 85vh"/>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="highlight-panel section is-fullheight highlight-image-background is-hidden-touch"
+    <section class="highlight-panel hero is-fullheight highlight-image-background"
       style="--background-image-url: url('./hamlet/NT-2024-Hamlet-1.webp');">
-      <div class="container pt-6">
-        <div class="columns is-vcentered has-text-centered">
-          <div class="column">
-            <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" />
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="highlight-panel is-fullheight highlight-image-background is-hidden-touch">
-      <div class="container pt-6">
-        <div class="columns is-vcentered has-text-centered is-centered">
-          <div class="column">
-            <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" />
+    <section class="highlight-panel hero is-fullheight highlight-image-background">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="highlight-panel is-fullheight highlight-image-background is-hidden-touch"
+    <section class="highlight-panel hero is-fullheight highlight-image-background"
       style="--background-image-url: url(./hamlet/NT-2024-Hamlet-20.webp);">
-      <div class="container pt-6">
-        <div class="columns is-vcentered has-text-centered">
-          <div class="column">
-            <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" />
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="highlight-panel is-fullheight highlight-image-background is-hidden-touch">
-      <div class="container pt-6">
-        <div class="columns is-vcentered has-text-centered">
-          <div class="column">
+    <section class="highlight-panel hero is-fullheight highlight-image-background">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
             <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-24.webp" alt="Hamlet" />
           </div>
         </div>
       </div>
-    </section>
-    <section class="highlight-panel is-fullheight highlight-image-background is-hidden-touch"
-      style="--background-image-url: url(./hamlet/NT-2024-Hamlet-29.webp);">
-      <div class="container pt-6">
-        <div class="columns is-vcentered has-text-centered">
+    </div>
+  </section>
+  <section class="highlight-panel hero is-fullheight highlight-image-background"
+    style="--background-image-url: url(./hamlet/NT-2024-Hamlet-29.webp);">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
           <div class="column">
             <img class="responsive-image has-shadow" src="./hamlet/NT-2024-Hamlet-29.webp" alt="Hamlet" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   </div>
 
   <section class="section animated-panel" id="production" style="background-color: lightgray;">
     <div class="container">
       <div class="section-title pb-6 is-size-3-touch">De Productie.</div>
       <div class="section-content">
-        <div class="columns is-desktop">
+        <div class="columns">
           <div class="column is-one-third">
             <img class="poster-image has-shadow" src="./hamlet-poster2-lr_orig.jpg" alt="Hamlet Play Poster" />
           </div>
