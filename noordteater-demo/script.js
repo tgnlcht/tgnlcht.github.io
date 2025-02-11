@@ -37,9 +37,15 @@ function loadMobileHighlights() {
 }
 
 function loadGallery() {
+  let mm = gsap.matchMedia();
+  let rowHeight = 100;
+  mm.add("(min-width: 1025px)", () => {
+    rowHeight = 300;
+  });
+
   $("#mygallery").justifiedGallery({
     waitThumbnailsLoad: true,
-    rowHeight: 300,
+    rowHeight: rowHeight,
     lastRow: 'nojustify',
     margins: 1,
     captions: false,
@@ -55,7 +61,7 @@ function loadGallery() {
 
 function loadHorizontalAnimateHighlightWrapper() {
   let mm = gsap.matchMedia();
-  mm.add("(min-width: 1024px)", () => {
+  mm.add("(min-width: 1025px)", () => {
     let hightlightWrapper = document.querySelector('#highlight-wrapper');
     let divs = hightlightWrapper.querySelectorAll(".highlight-panel");
     let parentTween = gsap.to(divs, {
@@ -131,10 +137,10 @@ function preloadImages(slides, callback) {
 function loadHighlightSlideshow() {
   let mm = gsap.matchMedia();
   var slides;
-  mm.add("(min-width: 1024px)", () => {
+  mm.add("(min-width: 1025px)", () => {
     slides = document.querySelectorAll(".slide.is-hidden-touch");
   });
-  mm.add("(max-width: 1023px)", () => {
+  mm.add("(max-width: 1024px)", () => {
     slides = document.querySelectorAll(".slide.is-hidden-desktop");
   });
 

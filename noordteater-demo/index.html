@@ -27,6 +27,12 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="preload" as="image" href="./hamlet/mob-NT-2024-Hamlet-5.webp">
+  <link rel="preload" as="image" href="./hamlet/mob-NT-2024-Hamlet-6.webp">
+  <link rel="preload" as="image" href="./hamlet/mob-NT-2024-Hamlet-14.webp">
+  <link rel="preload" as="image" href="./hamlet/mob-NT-2024-Hamlet-21.webp">
+  <link rel="preload" as="image" href="./hamlet/mob-NT-2024-Hamlet-25.webp">
+
   <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-16.webp">
   <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-1.webp">
   <link rel="preload" as="image" href="./hamlet/NT-2024-Hamlet-5.webp">
@@ -53,9 +59,9 @@
       <div class="navbar-end">
         <a class="navbar-item has-text-weight-bold" href="https://www.noordteater.com/" target="_new">Ga naar
           noordteater.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        <a class="navbar-item has-text-weight-bold"
+        <!-- a class="navbar-item has-text-weight-bold"
           href="https://www.facebook.com/sharer/sharer.php?u=https%3A//spotlicht.be/noordteater" target="_new"><i
-            class="fab fa-facebook-f"></i></a>
+            class="fab fa-facebook-f"></i></a -->
         <span class="navbar-item">
           <a href="">
             <span class="tickets">Boek je tickets!</span>
@@ -94,7 +100,7 @@
   </section>
 
   <div id="highlight-wrapper">
-    <section class="highlight-panel section  is-fullheight  animated-panel" id="storypanel">
+    <section class="highlight-panel section  animated-panel" id="storypanel">
       <div class="container pt-6">
         <div class="columns is-desktop">
           <div class="column">
@@ -117,21 +123,24 @@
                 bekendste Shakespearetragedie. Een voorstelling die door elkaar schudt, de poëzie niet schuwt en
                 verbazend
                 dicht bij het origineel blijft.</p>
-
-              <div class="carousel is-hidden-desktop mt-5 mb-6" data-flickity='{ "wrapAround": true }'>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-24.webp" alt="Hamlet" /></div>
-                <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-29.webp" alt="Hamlet" /></div>
-              </div>
-
             </div>
           </div>
           <div class="column is-half has-text-right is-hidden-touch pb-6">
-            <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" style="max-height: 85vh"/>
+            <img class="has-shadow" src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" style="max-height: 85vh" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="carousel is-hidden-desktop mb-6" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-1.webp" alt="Hamlet" /></div>
+          <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-16.webp" alt="Hamlet" /></div>
+          <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-5.webp" alt="Hamlet" /></div>
+          <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-20.webp" alt="Hamlet" /></div>
+          <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-24.webp" alt="Hamlet" /></div>
+          <div class="carousel-cell"><img src="./hamlet/NT-2024-Hamlet-29.webp" alt="Hamlet" /></div>
         </div>
       </div>
     </section>
@@ -196,53 +205,53 @@
           </div>
           <!-- Info Column -->
           <div class="column is-two-thirds">
-            <div class="fixed-grid has-3-cols">
+            <div class="fixed-grid">
               <div class="grid">
                 <!-- Countdown Timer Box -->
                 <div class="info-box cast-box countdown-box">
                   <h3 class="subtitle is-6 has-text-weight-bold"> <i class="fa-solid fa-clock"></i> Volgende
                     voorstelling
                     in:</h3>
-                  <div class="has-text-centered" style="width: 100%">
+                  <div class="has-text-centered is-size-1-touch" style="width: 100%">
                     <div id="flipdown" class="flipdown"></div>
                   </div>
                 </div>
                 <!-- Author -->
                 <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-pen-nib"></i> Auteur</h3>
+                  <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-pen-nib"></i> Auteur</h3>
                   <p>Piet Arfeuille, naar 'Hamlet' van William Shakespeare</p>
                 </div>
                 <!-- Director -->
                 <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-user-tie"></i> Regie & Bewerking
+                  <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-user-tie"></i> Regie & Bewerking
                   </h3>
                   <p>Nick Delafontaine</p>
                 </div>
                 <!-- Director Assistant -->
                 <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-user-gear"></i> Regie-assistentie
+                  <h3 class="subtitle is-6  is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-user-gear"></i> Regie-assistentie
                   </h3>
                   <p>Agnes Gottmann</p>
                 </div>
                 <!-- Screen Choreography -->
                 <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-video"></i> Schermchoreografie
+                  <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-video"></i> Schermchoreografie
                   </h3>
                   <p>Sigi Claes (Antwerps Scherm Centrum vzw)</p>
                 </div>
                 <!-- Genre -->
                 <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-masks-theater"></i> Genre</h3>
+                  <h3 class="subtitle is-6  is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-masks-theater"></i> Genre</h3>
                   <p>Tragedie</p>
                 </div>
                 <!-- Photographer -->
                 <div class="info-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-camera"></i> Fotografie</h3>
+                  <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-camera"></i> Fotografie</h3>
                   <p>Martin Kwee</p>
                 </div>
                 <!-- Cast -->
                 <div class="info-box cast-box">
-                  <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-users"></i> Cast</h3>
+                  <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-users"></i> Cast</h3>
                   <p>
                     Hans Claes, Jasper Weerts, Peter Renders, Gilbert Van Asselt, Maurice Van Tiggel,
                     Marleen Hereygers, Laila Mariën, Nils Anderson, Jan Binnemans, Ellen Dupré
@@ -252,14 +261,14 @@
                 <div class="info-box location-dates cast-box">
                   <div class="columns is-multiline is-mobile">
                     <div class="column is-full-mobile is-half-desktop">
-                      <h3 class="subtitle is-6 has-text-weight-bold"> <i class="fa-solid fa-location-dot"></i> Locatie
+                      <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"> <i class="fa-solid fa-location-dot"></i> Locatie
                       </h3>
                       <p>Noordteater<br />
                         Sint-nicolaasplaats 6<br />
                         ​2000 Antwerpen</p>
                     </div>
                     <div class="column is-full-mobile is-half-desktop">
-                      <h3 class="subtitle is-6 has-text-weight-bold"><i class="fa-solid fa-calendar-days"></i> Speeldata
+                      <h3 class="subtitle is-6 is-size-7-touch has-text-weight-bold"><i class="fa-solid fa-calendar-days"></i> Speeldata
                       </h3>
                       <p>Van 06 December 2024 tot 11 Januari 2025</p>
                     </div>
