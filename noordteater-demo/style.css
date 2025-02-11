@@ -155,7 +155,7 @@ body {
   transform: translateY(-100px);
 }
 
-.initial-overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,7 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  z-index: 101;
 }
 
 .cutout-text {
@@ -172,7 +172,7 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
-  z-index: 101;
+  z-index: 102;
   color: white;
   font-size: 6rem;
   text-transform: uppercase;

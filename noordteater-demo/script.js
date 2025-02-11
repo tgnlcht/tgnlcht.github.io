@@ -88,7 +88,7 @@ function loadLandingAnimation() {
 
   introTimeline
     .to(".overlay", {
-      opacity: 0.7, // Keep slight overlay for readability
+      opacity: 0.8, // Keep slight overlay for readability
       duration: 1.5,
       ease: "power3.out",
     })
