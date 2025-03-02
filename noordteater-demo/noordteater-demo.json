@@ -1,0 +1,88 @@
+{
+    "spotlicht": {
+        "meta" : {
+            "folder": "noordteater-demo",
+            "og_image" : "resources/NT-2024-Hamlet-5-OG-1.91x1.webp"
+        },
+        "gezelschap": {
+            "naam": "Noordteater",
+            "website": "https://www.noordteater.be/"
+        },
+        "landing": {
+            "images" : [
+                "resources/images/NT-2024-Hamlet-5.webp",
+                "resources/images/NT-2024-Hamlet-6.webp",
+                "resources/images/NT-2024-Hamlet-14.webp",
+                "resources/images/NT-2024-Hamlet-21.webp",
+                "resources/images/NT-2024-Hamlet-25.webp"
+            ],
+            "mobile_images": [
+                "resources/mob/mob-5x7-NT-2024-Hamlet-5.webp",
+                "resources/mob/mob-5x7-NT-2024-Hamlet-6.webp",
+                "resources/mob/mob-5x7-NT-2024-Hamlet-14.webp",
+                "resources/mob/mob-5x7-NT-2024-Hamlet-21.webp",
+                "resources/mob/mob-5x7-NT-2024-Hamlet-25.webp"
+            ]
+        },
+        "verhaal": {
+            "images" : {
+                "vertical" :  "resources/images/NT-2024-Hamlet-16.webp",
+                "highlights" : [
+                    "resources/images/NT-2024-Hamlet-1.webp",
+                    "resources/images/NT-2024-Hamlet-5.webp",
+                    "resources/images/NT-2024-Hamlet-20.webp",
+                    "resources/images/NT-2024-Hamlet-24.webp",
+                    "resources/images/NT-2024-Hamlet-29.webp"
+                ]
+            }
+        },
+        "productie": {
+            "naam": "Hamlet",
+            "tickets" : {
+                "ticket_1" : {
+                    "naam": "Reserveer je stoel!",
+                    "url": "https://be.ticketgang.eu/orgFrameSaleNew.php?org=281&event=143983#",
+                    "enddate": "2025-12-31"
+                },
+                "ticket_2" : {
+                    "naam": "Première Tickets",
+                    "url": "",
+                    "enddate": "2025-12-31"
+                }
+            },
+            "verhaal": {
+                "fotos": [
+                    "search",
+                    "comments",
+                    "analytics"
+                ]
+            },
+            "speeldata" : "Van 06 December 2024 tot 11 Januari 2025",
+            "voorstellingen" : [
+                "2025-03-01T20:00:00Z",
+                "2025-04-01T20:00:00Z",
+                "2025-05-01T20:00:00Z",
+                "2025-06-01T20:00:00Z",
+                "2025-07-01T20:00:00Z",
+                "2025-08-01T20:00:00Z",
+                "2025-09-01T20:00:00Z",
+                "2025-10-01T20:00:00Z",
+                "2025-11-01T20:00:00Z",
+                "2025-12-01T20:00:00Z"
+            ],
+            "poster": "resources/poster.jpg",
+            "auteur": "Piet Arfeuille, naar 'Hamlet' van William Shakespeare",
+            "regie": "Nick Delafontaine",
+            "regie_assistentie": "Agnes Gottmann",
+            "choreografie": "Sigi Claes (Antwerps Scherm Centrum vzw)",
+            "genre": "Tragedie",
+            "fotografie": "Martin Kwee",
+            "cast:": "Hans Claes, Jasper Weerts, Peter Renders, Gilbert Van Asselt, Maurice Van Tiggel, Marleen Hereygers, Laila Mariën, Nils Anderson, Jan Binnemans, Ellen Dupré",
+            "locatie" : {
+                "naam": "Noordteater",
+                "straat": "Sint-nicolaasplaats 6",
+                "stad": "Antwerpen"
+            }
+        }
+    }
+}
