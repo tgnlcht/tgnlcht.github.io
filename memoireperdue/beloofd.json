@@ -1,0 +1,81 @@
+{
+    "spotlicht": {
+        "meta": {
+            "folder": "memoireperdue",
+            "og_image": "resources/MP-2025-Beloofd-4-OG.webp"
+        },
+        "gezelschap": {
+            "naam": "Mémoire Perdue",
+            "website": "https://www.memoireperdue.be/"
+        },
+        "landing": {
+            "images": [
+                "resources/images/MP-2025-Beloofd-4.webp",
+                "resources/images/MP-2025-Beloofd-5.webp",
+                "resources/images/MP-2025-Beloofd-10.webp",
+                "resources/images/MP-2025-Beloofd-12.webp",
+                "resources/images/MP-2025-Beloofd-27.webp",
+                "resources/images/MP-2025-Beloofd-37.webp",
+                "resources/images/MP-2025-Beloofd-39.webp"
+            ],
+            "mobile_images": [
+                "resources/mob/MP-2025-Beloofd-4.webp",
+                "resources/mob/MP-2025-Beloofd-5.webp",
+                "resources/mob/MP-2025-Beloofd-10.webp",
+                "resources/mob/MP-2025-Beloofd-12.webp",
+                "resources/mob/MP-2025-Beloofd-27.webp",
+                "resources/mob/MP-2025-Beloofd-37.webp",
+                "resources/mob/MP-2025-Beloofd-39.webp"
+            ]
+        },
+        "verhaal": {
+            "images": {
+                "vertical": "resources/images/MP-2025-Beloofd-2.webp",
+                "highlights": [
+                    "resources/images/MP-2025-Beloofd-12.webp",
+                    "resources/images/MP-2025-Beloofd-16.webp",
+                    "resources/images/MP-2025-Beloofd-26.webp",
+                    "resources/images/MP-2025-Beloofd-38.webp",
+                    "resources/images/MP-2025-Beloofd-42.webp"
+                ]
+            }
+        },
+        "productie": {
+            "naam": "Beloofd?",
+            "tickets": {
+                "ticket_1": {
+                    "naam": "Reserveer je stoel!",
+                    "url": "https://www.fakkeltheater.be/voorstellingen/beloofd",
+                    "enddate": "2025-03-16"
+                },
+                "ticket_2": {
+                    "naam": "",
+                    "url": "",
+                    "enddate": ""
+                }
+            },
+            "speeldata": "Van 13 maart t.e.m. 16 maart 2025",
+            "voorstellingen": [
+                "2025-03-13T20:00:00+01:00",
+                "2025-04-14T20:00:00+01:00",
+                "2025-05-15T20:00:00+01:00",
+                "2025-06-16T15:00:00+01:00"
+            ],
+            "poster": "resources/poster.jpg",
+            "auteur": "Laila Mariën",
+            "regie": "Nick Delafontaine",
+            "regie_assistentie": "Lieve Roelants",
+            "choreografie": "",
+            "genre": "Psychologisch drama",
+            "fotografie": "Martin Kwee van Tegenlicht Fotografie",
+            "cast:": "Hans Claes, Laila Mariën, Nils Anderson",
+            "locatie": {
+                "naam": "Kleine Fakkel (Fakkeltheater)",
+                "straat": "Hoogstraat 12",
+                "stad": "Antwerpen"
+            }
+        },
+        "spotify": "https://open.spotify.com/embed/playlist/5uUCmWMMbNk8Qd8ZJyWJOl?si=3hykGDTWT0ezBsUgFOgZFwD",
+        "bts": "true"
+    }
+}
