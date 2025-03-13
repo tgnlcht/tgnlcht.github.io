@@ -10,8 +10,8 @@
         },
         "landing": {
             "images": [
-                "resources/images/MP-2025-Beloofd-4.webp",
-                "resources/images/MP-2025-Beloofd-5.webp",
+                "resources/images/MP-2025-Beloofd-04.webp",
+                "resources/images/MP-2025-Beloofd-05.webp",
                 "resources/images/MP-2025-Beloofd-10.webp",
                 "resources/images/MP-2025-Beloofd-12.webp",
                 "resources/images/MP-2025-Beloofd-27.webp",
@@ -57,9 +57,9 @@
             "speeldata": "Van 13 maart t.e.m. 16 maart 2025",
             "voorstellingen": [
                 "2025-03-13T20:00:00+01:00",
-                "2025-04-14T20:00:00+01:00",
-                "2025-05-15T20:00:00+01:00",
-                "2025-06-16T15:00:00+01:00"
+                "2025-03-14T20:00:00+01:00",
+                "2025-03-15T20:00:00+01:00",
+                "2025-03-16T15:00:00+01:00"
             ],
             "poster": "resources/poster.jpg",
             "auteur": "Laila Mariën",
