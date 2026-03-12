@@ -1,0 +1,82 @@
+{
+    "spotlicht": {
+        "meta": {
+            "folder": "vast-als-eik",
+            "og_image": "resources/images/VAE-Sons-24-OG.webp"
+        },
+        "gezelschap": {
+            "naam": "Vast als Eik",
+            "website": "https://www.vastalseik.be"
+        },
+        "landing": {
+            "images": [
+                "resources/images/VAE-Sons-07.webp",
+                "resources/images/VAE-Sons-12.webp",
+                "resources/images/VAE-Sons-22.webp",
+                "resources/images/VAE-Sons-31.webp",
+                "resources/images/VAE-Sons-32.webp",
+                "resources/images/VAE-Sons-36.webp"
+            ],
+            "mobile_images": [
+                "resources/mob/VAE-Sons-07.webp",
+                "resources/mob/VAE-Sons-12.webp",
+                "resources/mob/VAE-Sons-22.webp",
+                "resources/mob/VAE-Sons-31.webp",
+                "resources/mob/VAE-Sons-32.webp",
+                "resources/mob/VAE-Sons-36.webp"
+            ]
+        },
+        "verhaal": {
+            "images": {
+                "vertical": "resources/VAE-Sons-42.webp",
+                "highlights": [
+                    "resources/images/VAE-Sons-01.webp",
+                    "resources/images/VAE-Sons-14.webp",
+                    "resources/images/VAE-Sons-24.webp",
+                    "resources/images/VAE-Sons-30.webp",
+                    "resources/images/VAE-Sons-37.webp"
+                ]
+            }
+        },
+        "productie": {
+            "naam": "All My Sons",
+            "tickets": {
+                "ticket_1": {
+                    "naam": "Reserveer je stoel!",
+                    "url": "https://shop.stamhoofd.be/all-my-sons/",
+                    "enddate": "2026-03-28"
+                },
+                "ticket_2": {
+                    "naam": "",
+                    "url": "",
+                    "enddate": ""
+                }
+            },
+            "speeldata": "Van 14 maart t.e.m. 28 maart 2026",
+            "voorstellingen": [
+                "2026-03-14T20:30:00+01:00",
+                "2026-03-15T15:00:00+01:00",
+                "2026-03-19T20:30:00+01:00",
+                "2026-03-20T20:30:00+01:00",
+                "2026-03-21T20:30:00+01:00",
+                "2026-03-27T20:30:00+01:00",
+                "2026-03-28T20:30:00+01:00"
+
+            ],
+            "poster": "resources/poster.jpeg",
+            "auteur": "Arthur Miller",
+            "regie": "Laila Mariën",
+            "regie_assistentie": "",
+            "choreografie": "",
+            "genre": "Drama",
+            "fotografie": "Martin Kwee van Tegenlicht Fotografie",
+            "cast:": "Joke Brondeel, Marleen Brondeel, Eric Citters, Tim De Gendt, Til De Ridder, Celien De Schryver, Olivier Giger, Niels Lacroix, Hilde Van Mol, Eddy Veeckman",
+            "locatie": {
+                "naam": "Parochiaal Centrum",
+                "straat": "Hofstade-dorp 10",
+                "stad": "9308 Hofstade (Aalst)"
+            }
+        },
+        "bts": "false"
+    }
+}
