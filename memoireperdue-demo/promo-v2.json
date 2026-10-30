@@ -1,0 +1,82 @@
+{
+  "toon": "thriller",
+  "gezelschap": {
+    "naam": "Mémoire Perdue",
+    "website": "https://www.memoireperdue.be/",
+    "label": "memoireperdue.be"
+  },
+  "titel": "Beloofd?",
+  "ondertitel": "van Laila Mariën",
+  "zaal": {
+    "naam": "Kleine Fakkel (Fakkeltheater)",
+    "plaats": "Antwerpen",
+    "adres": "Hoogstraat 12, 2000 Antwerpen"
+  },
+  "reserveren": {
+    "url": "https://www.fakkeltheater.be/voorstellingen/beloofd"
+  },
+  "kopregel": "Wat als een belofte alles verandert?",
+  "hero": {
+    "a": {
+      "foto": "MP-2025-Beloofd-04.webp",
+      "focus": "50% 30%"
+    },
+    "b": {
+      "foto": "MP-2025-Beloofd-05.webp",
+      "focus": "50% 40%"
+    },
+    "licht": "50% 20%"
+  },
+  "paar": {
+    "fotos": [
+      "MP-2025-Beloofd-12.webp",
+      "MP-2025-Beloofd-16.webp"
+    ],
+    "bijschrift": "Psychologisch drama over beloften en wat ze met mensen doen."
+  },
+  "troef": {
+    "foto": "MP-2025-Beloofd-26.webp",
+    "tekst": "Intiem en confronterend, op een handgrijpafstand van het publiek.",
+    "klein": "Kleine Fakkel, Antwerpen"
+  },
+  "tussenzin": "Een belofte is geen contract. Of toch?",
+  "breed": "MP-2025-Beloofd-27.webp",
+  "selectie": [
+    "MP-2025-Beloofd-01.webp",
+    "MP-2025-Beloofd-10.webp",
+    "MP-2025-Beloofd-37.webp",
+    "MP-2025-Beloofd-38.webp",
+    "MP-2025-Beloofd-39.webp",
+    "MP-2025-Beloofd-42.webp",
+    "MP-2025-Beloofd-02.webp",
+    "MP-2025-Beloofd-14.webp",
+    "MP-2025-Beloofd-21.webp",
+    "MP-2025-Beloofd-30.webp",
+    "MP-2025-Beloofd-33.webp",
+    "MP-2025-Beloofd-44.webp"
+  ],
+  "cast": [
+    { "naam": "Hans Claes" },
+    { "naam": "Laila Mariën" },
+    { "naam": "Nils Anderson" }
+  ],
+  "credits": [
+    ["Tekst", "Laila Mariën"],
+    ["Regie", "Nick Delafontaine"],
+    ["Regie-assistentie", "Lieve Roelants"],
+    ["Genre", "Psychologisch drama"],
+    ["Fotografie", "Martin Kwee, Tegenlicht"]
+  ],
+  "slot": {
+    "foto": "MP-2025-Beloofd-45.webp",
+    "tekst": "Beloofd? Kom het zelf oordelen."
+  },
+  "affiche": "resources/poster.jpg",
+  "speeldata": [
+    { "datum": "2025-03-13T20:00", "notitie": "première" },
+    { "datum": "2025-03-14T20:00" },
+    { "datum": "2025-03-15T20:00" },
+    { "datum": "2025-03-16T15:00", "notitie": "matinee" }
+  ],
+  "og_image": "resources/MP-2025-Beloofd-4-OG.webp"
+}

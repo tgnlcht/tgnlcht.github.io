@@ -1,0 +1,143 @@
+{
+  "toon": "drama",
+  "gezelschap": {
+    "naam": "Noordteater",
+    "website": "https://www.noordteater.be/",
+    "label": "noordteater.be"
+  },
+  "titel": "Hamlet",
+  "ondertitel": "naar William Shakespeare",
+  "zaal": {
+    "naam": "Noordteater",
+    "plaats": "Antwerpen",
+    "adres": "Sint-Nicolaasplaats 6, 2000 Antwerpen"
+  },
+  "reserveren": {
+    "url": "https://be.ticketgang.eu/orgFrameSaleNew.php?org=281&event=143983"
+  },
+  "kopregel": "Denemarken is ziek.",
+  "hero": {
+    "a": {
+      "foto": "NT-2024-Hamlet-07.webp",
+      "focus": "30% 40%"
+    },
+    "b": {
+      "foto": "NT-2024-Hamlet-31.webp",
+      "focus": "50% 45%"
+    },
+    "licht": "50% 22%"
+  },
+  "paar": {
+    "fotos": [
+      "NT-2024-Hamlet-29.webp",
+      "NT-2024-Hamlet-30.webp"
+    ],
+    "bijschrift": "Ophelia, en wat het hof met haar doet."
+  },
+  "troef": {
+    "foto": "NT-2024-Hamlet-35.webp",
+    "tekst": "Echte zwaarden, op twee meter van de eerste rij.",
+    "klein": "Gevechtschoreografie: Sigi Claes, Antwerps Scherm Centrum"
+  },
+  "tussenzin": "Er is iets rot in de staat Denemarken.",
+  "breed": "NT-2024-Hamlet-18.webp",
+  "selectie": [
+    "NT-2024-Hamlet-26.webp",
+    "NT-2024-Hamlet-14.webp",
+    "NT-2024-Hamlet-02.webp",
+    "NT-2024-Hamlet-16.webp",
+    "NT-2024-Hamlet-12.webp",
+    "NT-2024-Hamlet-33.webp",
+    "NT-2024-Hamlet-19.webp",
+    "NT-2024-Hamlet-21.webp",
+    "NT-2024-Hamlet-25.webp",
+    "NT-2024-Hamlet-06.webp",
+    "NT-2024-Hamlet-23.webp",
+    "NT-2024-Hamlet-11.webp"
+  ],
+  "cast": [
+    {
+      "naam": "Jasper Weerts"
+    },
+    {
+      "naam": "Peter Renders"
+    },
+    {
+      "naam": "Marleen Hereygers"
+    },
+    {
+      "naam": "Gilbert Van Asselt"
+    },
+    {
+      "naam": "Laila Mariën"
+    },
+    {
+      "naam": "Nils Anderson"
+    },
+    {
+      "naam": "Jan Binnemans"
+    },
+    {
+      "naam": "Ellen Dupré"
+    },
+    {
+      "naam": "Maurice Van Tiggel"
+    },
+    {
+      "naam": "Hans Claes"
+    }
+  ],
+  "credits": [
+    [
+      "Tekst",
+      "Piet Arfeuille, naar William Shakespeare"
+    ],
+    [
+      "Regie",
+      "Nick Delafontaine"
+    ],
+    [
+      "Regie-assistentie",
+      "Agnes Gottmann"
+    ],
+    [
+      "Gevechtschoreografie",
+      "Sigi Claes"
+    ],
+    [
+      "Fotografie",
+      "Martin Kwee, Tegenlicht"
+    ]
+  ],
+  "slot": {
+    "foto": "NT-2024-Hamlet-05.webp",
+    "tekst": "Zijn of niet zijn. Kom het zelf zien."
+  },
+  "affiche": "resources/poster.jpg",
+  "speeldata": [
+    {
+      "datum": "2024-12-06T20:00",
+      "notitie": "première"
+    },
+    {
+      "datum": "2024-12-07T20:00"
+    },
+    {
+      "datum": "2024-12-08T15:00",
+      "notitie": "matinee"
+    },
+    {
+      "datum": "2024-12-13T20:00"
+    },
+    {
+      "datum": "2024-12-14T20:00"
+    },
+    {
+      "datum": "2025-01-10T20:00"
+    },
+    {
+      "datum": "2025-01-11T20:00"
+    }
+  ],
+  "og_image": "resources/NT-2024-Hamlet-5-OG-1.91x1.webp"
+}
