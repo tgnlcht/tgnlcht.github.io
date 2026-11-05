@@ -1,0 +1,142 @@
+{
+  "toon": "komedie",
+  "soort": "theater",
+  "gezelschap": {
+    "naam": "Vast Als Eik",
+    "website": "https://www.vastalseik.be/",
+    "label": "vastalseik.be",
+    "instagram": "https://www.instagram.com/vastalseik/"
+  },
+  "titel": "Stilte, wij draaien!",
+  "ondertitel": "van Patrick Haudecoeur en Gérard Sibleyras",
+  "zaal": {
+    "naam": "Parochiaal Centrum",
+    "plaats": "Hofstade (Aalst)",
+    "adres": "Dorp 10, 9308 Hofstade"
+  },
+  "reserveren": {
+    "url": "https://shop.stamhoofd.be/stilte-wij-draaien"
+  },
+  "kopregel": "Een filmset. Grote ego’s. En bijzonder weinig geduld.",
+  "citaat": {
+    "tekst": "Ik produceer uwen film als ge Lola de hoofdrol geeft! Moet ik u een paar foto's tonen van een regisseur die weigerde om met Lola te werken?"
+  },
+  "hero": {
+    "a": {
+      "foto": "VAE-2026-StilteWijDraaien-09.webp",
+      "focus": "65% 35%"
+    },
+    "b": {
+      "foto": "VAE-2026-StilteWijDraaien-04.webp",
+      "focus": "20% 60%"
+    },
+    "licht": "65% 30%"
+  },
+  "paar": {
+    "fotos": [
+      "VAE-2026-StilteWijDraaien-06.webp",
+      "VAE-2026-StilteWijDraaien-10.webp"
+    ],
+    "bijschrift": "Waar hebt ge die schminkster gevonden, die spreekt geen woord Nederlands!"
+  },
+  "troef": {
+    "foto": "VAE-2026-StilteWijDraaien-27.webp",
+    "tekst": "En u? U bent de figurant en zit midden in het spektakel.",
+    "focus": "28% 30%"
+  },
+  "tussenzin": "Wat kan er misgaan? Zowat alles!",
+  "breed": "VAE-2026-StilteWijDraaien-35.webp",
+  "selectie": [
+    "VAE-2026-StilteWijDraaien-05.webp",
+    "VAE-2026-StilteWijDraaien-07.webp",
+    "VAE-2026-StilteWijDraaien-12.webp",
+    "VAE-2026-StilteWijDraaien-17.webp",
+    "VAE-2026-StilteWijDraaien-22.webp",
+    "VAE-2026-StilteWijDraaien-24.webp",
+    "VAE-2026-StilteWijDraaien-28.webp",
+    "VAE-2026-StilteWijDraaien-31.webp",
+    "VAE-2026-StilteWijDraaien-34.webp",
+    "VAE-2026-StilteWijDraaien-37.webp",
+    "VAE-2026-StilteWijDraaien-38.webp"
+  ],
+  "cast": [
+    {
+      "naam": "Ianthe Cammu"
+    },
+    {
+      "naam": "Elke Laureys"
+    },
+    {
+      "naam": "Myriame Arys"
+    },
+    {
+      "naam": "Niels Lacroix"
+    },
+    {
+      "naam": "Joke Brondeel"
+    },
+    {
+      "naam": "Tim De Ryck"
+    },
+    {
+      "naam": "Pieterjan De Schryver"
+    },
+    {
+      "naam": "Michael Daelman"
+    },
+    {
+      "naam": "Tim De Gendt"
+    },
+    {
+      "naam": "Leen Guns"
+    }
+  ],
+  "credits": [
+    [
+      "Auteurs",
+      "Patrick Haudecoeur en Gérard Sibleyras"
+    ],
+    [
+      "Vertaling en bewerking",
+      "Bruno Van Heystraeten"
+    ],
+    [
+      "Regie",
+      "Eric Meirhaeghe"
+    ],
+    [
+      "Fotografie",
+      "Martin Kwee, Tegenlicht"
+    ]
+  ],
+  "slot": {
+    "foto": "VAE-2026-StilteWijDraaien-01.webp",
+    "tekst": "Gewoon rustig blijven zitten. De filmploeg heeft alles onder controle. Voorlopig. Ongeveer."
+  },
+  "affiche": "resources/poster.jpg",
+  "speeldata": [
+    {
+      "datum": "2026-11-07T20:30",
+      "notitie": "première"
+    },
+    {
+      "datum": "2026-11-08T15:00"
+    },
+    {
+      "datum": "2026-11-12T20:30"
+    },
+    {
+      "datum": "2026-11-13T20:30"
+    },
+    {
+      "datum": "2026-11-14T20:30"
+    },
+    {
+      "datum": "2026-11-20T20:30"
+    },
+    {
+      "datum": "2026-11-21T20:30"
+    }
+  ],
+  "og_image": "resources/VAE-2026-StilteWijDraaien-OG.webp"
+}
