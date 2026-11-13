@@ -1,0 +1,159 @@
+{
+  "toon": "thriller",
+  "soort": "theater",
+  "gezelschap": {
+    "naam": "Mémoire Perdue",
+    "website": "https://www.memoireperdue.be/",
+    "label": "memoireperdue.be",
+    "instagram": "https://www.instagram.com/memoire_perdue_theater"
+  },
+  "titel": "De Kussenman",
+  "ondertitel": "Martin McDonagh",
+  "zaal": {
+    "naam": "OC De Kapel",
+    "plaats": "Berchem",
+    "adres": "Floraliënlaan 400B, 2600 Berchem"
+  },
+  "reserveren": {
+    "url": "https://tickets.roodfluweel.be/zorgbedrijf-antwerpen/Production/Details/7bcd8b61-825d-4fb3-ada1-9d91f028bbc7"
+  },
+  "kopregel": "Denk spanning, denk verwondering, denk meeslepend, denk misleidend en toch komisch!",
+  "vo_tekst": "In een onbepaalde totalitaire staat wordt de amateur-schrijfster Katurian door twee rechercheurs van de staatsveiligheid ondervraagd. De reden van haar arrestatie ontgaat haar volkomen. Verhalen die u onmogelijk koud zullen laten.",
+  "hero": {
+    "a": {
+      "foto": "MP-2026-DeKussenman-22.webp",
+      "focus": "50% 40%"
+    },
+    "b": {
+      "foto": "MP-2026-DeKussenman-01.webp",
+      "focus": "65% 35%"
+    },
+    "licht": "85% 20%"
+  },
+  "paar": {
+    "fotos": [
+      "MP-2026-DeKussenman-08.webp",
+      "MP-2026-DeKussenman-10.webp"
+    ],
+    "bijschrift": "Verhalen die u onmogelijk koud zullen laten."
+  },
+  "troef": {
+    "foto": "MP-2026-DeKussenman-13.webp",
+    "focus": "68% 35%",
+    "tekst": "Auteur Martin McDonagh won voor deze tekst in 2004 de Laurence Olivier Award."
+  },
+  "tussenzin": "De reden van haar arrestatie ontgaat haar volkomen.",
+  "breed": "MP-2026-DeKussenman-02.webp",
+  "selectie": [
+    "MP-2026-DeKussenman-04.webp",
+    "MP-2026-DeKussenman-07.webp",
+    "MP-2026-DeKussenman-06.webp",
+    "MP-2026-DeKussenman-30.webp",
+    "MP-2026-DeKussenman-11.webp",
+    "MP-2026-DeKussenman-16.webp",
+    "MP-2026-DeKussenman-17.webp",
+    "MP-2026-DeKussenman-24.webp",
+    "MP-2026-DeKussenman-20.webp",
+    "MP-2026-DeKussenman-26.webp",
+    "MP-2026-DeKussenman-28.webp",
+    "MP-2026-DeKussenman-33.webp"
+  ],
+  "archief": [
+    "MP-2026-DeKussenman-01.webp",
+    "MP-2026-DeKussenman-02.webp",
+    "MP-2026-DeKussenman-03.webp",
+    "MP-2026-DeKussenman-04.webp",
+    "MP-2026-DeKussenman-05.webp",
+    "MP-2026-DeKussenman-06.webp",
+    "MP-2026-DeKussenman-07.webp",
+    "MP-2026-DeKussenman-08.webp",
+    "MP-2026-DeKussenman-09.webp",
+    "MP-2026-DeKussenman-10.webp",
+    "MP-2026-DeKussenman-11.webp",
+    "MP-2026-DeKussenman-12.webp",
+    "MP-2026-DeKussenman-13.webp",
+    "MP-2026-DeKussenman-14.webp",
+    "MP-2026-DeKussenman-15.webp",
+    "MP-2026-DeKussenman-16.webp",
+    "MP-2026-DeKussenman-17.webp",
+    "MP-2026-DeKussenman-18.webp",
+    "MP-2026-DeKussenman-19.webp",
+    "MP-2026-DeKussenman-20.webp",
+    "MP-2026-DeKussenman-21.webp",
+    "MP-2026-DeKussenman-22.webp",
+    "MP-2026-DeKussenman-23.webp",
+    "MP-2026-DeKussenman-24.webp",
+    "MP-2026-DeKussenman-25.webp",
+    "MP-2026-DeKussenman-26.webp",
+    "MP-2026-DeKussenman-27.webp",
+    "MP-2026-DeKussenman-28.webp",
+    "MP-2026-DeKussenman-29.webp",
+    "MP-2026-DeKussenman-30.webp",
+    "MP-2026-DeKussenman-31.webp",
+    "MP-2026-DeKussenman-32.webp",
+    "MP-2026-DeKussenman-33.webp"
+  ],
+  "cast": [
+    {
+      "naam": "Katrien Vergauwen",
+      "rol": "Katurian",
+      "portret": "MP-2026-DeKussenman-40.webp"
+    },
+    {
+      "naam": "Maurice Van Tiggel",
+      "rol": "Tupolski",
+      "portret": "MP-2026-DeKussenman-37.webp"
+    },
+    {
+      "naam": "Abel Tjantelé",
+      "rol": "Ariel",
+      "portret": "MP-2026-DeKussenman-38.webp"
+    },
+    {
+      "naam": "Stijn Vermeylen",
+      "rol": "Michal",
+      "portret": "MP-2026-DeKussenman-39.webp"
+    },
+    {
+      "naam": "Rhea Kavadias",
+      "rol": "Maria",
+      "portret": "MP-2026-DeKussenman-41.webp"
+    }
+  ],
+  "credits": [
+    [
+      "Auteur",
+      "Martin McDonagh"
+    ],
+    [
+      "Vertaling",
+      "Koen De Sutter"
+    ],
+    [
+      "Regie",
+      "Nick Delafontaine"
+    ],
+    [
+      "Regie-assistentie",
+      "Jeaninne Bosch"
+    ],
+    [
+      "Fotografie",
+      "Martin Kwee, Tegenlicht"
+    ]
+  ],
+  "slot": {
+    "foto": "MP-2026-DeKussenman-25.webp",
+    "tekst": "Het verhaal kent een merkwaardige ontknoping net als de kortverhalen van Katurian zelf."
+  },
+  "affiche": "resources/poster.jpg",
+  "speeldata": [
+    {
+      "datum": "2026-12-03T20:00"
+    },
+    {
+      "datum": "2026-12-04T20:00"
+    }
+  ],
+  "og_image": "resources/MP-2026-DeKussenman-OG.webp"
+}
